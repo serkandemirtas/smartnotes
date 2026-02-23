@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container text-center my-5 py-5">
+    
+    <h1 class="display-3 fw-bold mb-3 text-primary">Welcome to <span class="text-info">SmartNotes!</span></h1>
+
+   
+    <p class="lead mb-4 text-secondary">Today is {{ today }}</p>
+
+    
+    <a href="{% url 'login' %}" class="btn btn-primary btn-lg shadow-lg">
+        Check out these smart notes!
+    </a>
+
+    
+    <p class="mt-4 text-muted small">
+        Organize your notes and access them anytime, anywhere.
+    </p>
+</div>
+{% endblock %}
